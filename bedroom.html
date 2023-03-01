@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Mahum Tariq, 000848909 -->
+		<meta charset="UTF-8">
+		<title>Sandy and Leslie's apartment</title>
+		<link rel="stylesheet" href="apartment_layout.css">
+		<link rel="stylesheet" href="mobile.css">
+		<link rel="stylesheet" href="printer.css" media="print">
+		<style>
+		footer{
+		 text-align: left;
+		}
+		
+		</style>
+		
+	</head>
+	<body>
+		<h1>Sandy and Leslie's Apartment</h1>
+		<header>
+			<figure>
+				<figcaption>Click a room for a detailed view</figcaption>
+				<img src="images/apartmentfloorplan.jpg" usemap="#image-map">
+
+				<map name="image-map">
+					<area alt="Dining Room" title="dining Room" href="diningroom.html"
+					coords="413,139,48" shape="circle">
+					<area alt="Kitchen" title="kitchen" href="kitchen.html" 
+					coords="247,270,386,393" shape="rect">
+					<area alt="Bedroom 1" title="bedroom 1" href="bedroom.html" 
+					coords="61,14,194,159" shape="rect">
+					<area alt="Bedroom 2" title="bedroom 2" href="bedroom.html" 
+					coords="205,15,347,155" shape="rect">
+					<area alt="Living Room" title="living Room" href="livingroom.html"
+					coords="384,190,471,170,526,181,540,390,389,393" shape="poly">
+					<area shape="default" 
+					href="apartment.html" 
+					alt="floorplan">
+				</map>
+			</figure>
+		</header>
+		<nav>
+			<a href="apartment.html">Apartment</a>
+			<a href="bedroom.html">Bedroom 1</a>
+			<a href="bedroom.html">Bedroom 2</a>
+			<a href="diningroom.html">Dining Room</a>
+			<a href="kitchen.html">Kitchen</a>
+			<a href="livingroom.html">Living Room</a>
+		</nav>
+		<section>
+			<div class="room">
+				<h5>Bedroom Detail</h5>
+				<figure>
+					<img src="images/bedroom_lg.jpg" alt="Bedroom">
+				</figure>
+				<section class="shape">
+				<h3>Apartment services:</h3>
+					<table class="roomtable">
+						<colgroup>
+							<col class="leftcol">
+							<col class="rightcol">
+						</colgroup>
+						<tr>
+							<th>Services</th>
+							<th>Day/Hours</th>
+						</tr>
+						<tr>
+							<td>Gym</td>
+							<td rowspan="2"><br>Monday-Friday 6am - 10pm<br>
+												Saturday 8am - 8pm<br>
+												Sunday 8am - 5pm<br></td>
+						<tr>
+							<td>Pool</td>
+						</tr>
+						<tr>
+							<td>Laundry</td>
+							<td>24/7</td>
+						</tr>
+						<tr class="tablefoot">
+							<td colspan="2">Please do not allow people you do not know to use these facilities.</td>
+						</tr>	
+				</table>
+                </section>				
+			</div>
+		</section>
+		<footer style="text-align: left;">
+			<p>For more information contact:
+				<a href="mailto:sandyandleslie@example.com">
+				sandyandleslie@example.com</a></p>
+			<p>&copy; Sandy	and Leslie 2020</p>
+		</footer>	
+		
+		
+		
+	</body>
+</html>			
