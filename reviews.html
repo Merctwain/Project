@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--  Author: Mahum Tariq, 000848909 -->
+    <meta charset="UTF-8">
+    <title>Outdoor Adventure Reviews</title>
+    <link rel="stylesheet" href="adventurestyles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <style>
+        form{
+            width: 90%;
+            margin: 10px auto;
+            padding: 7px;
+        }
+        form, fieldset{
+            background-color: #40538C;
+            color: white;
+        }
+        fieldset{
+            margin: 10px;
+            border-color: white;
+            padding: 10px;
+        }
+        .button{
+            background-color: #FFFFE6;
+            border-radius: 0;
+            padding: 2px;
+        }
+        .table table td:first-child{
+            text-align: right;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Outdoor Adventure Trip Reviews<br>2020/2021</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Photos</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Seminars</a></li>
+            <li><a href="">Event</a></li>
+        </ul>
+    </nav>
+
+    <form action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="post">
+        <fieldset>
+            <legend>&nbsp;Trip Reviews&nbsp;</legend>
+            <select name="trip" id="">
+                <option value="Alberta Rural">Alberta Rural</option>
+                <option value="B.C. Coast">B.C. Coast</option>
+                <option value="Ontario Lake Superior">Ontario Lake Superior</option>
+                <option value="PEI" selected>PEI</option>
+                <option value="Nova Scotia Cabot Trail">Nova Scotia Cabot Trail</option>
+            </select>
+            <select name="duration" id="">
+                <option value="5d">5 Days</option>
+                <option value="7d">7 Days</option>
+                <option value="10d">10 Days</option>
+                <option value="14d">14 Days</option>
+            </select><br>
+            <span>Your rating:</span><br>
+            <input type="radio" name="rating" id="" value="4" checked=true> <img src="images/wheel_sm.jpg" alt=""><img src="images/wheel_sm.jpg" alt=""><img src="images/wheel_sm.jpg" alt=""><img src="images/wheel_sm.jpg" alt=""><br>
+            <input type="radio" name="rating" id="" value="3"> <img src="images/wheel_sm.jpg" alt=""><img src="images/wheel_sm.jpg" alt=""><img src="images/wheel_sm.jpg" alt=""><br>
+            <input type="radio" name="rating" id="" value="2"> <img src="images/wheel_sm.jpg" alt=""><img src="images/wheel_sm.jpg" alt=""><br>
+            <input type="radio" name="rating" id="" value="1"> <img src="images/wheel_sm.jpg" alt=""><br>
+            <span>Comments:</span><br>
+            <textarea name="comments" id="" cols="65" rows="7"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>&nbsp;I would be interested in these trips: (check all that apply)&nbsp;</legend>
+            <input type="checkbox" name="interested"> Sea or Lake Coast <br>
+            <input type="checkbox" name="interested"> Rural<br>
+            <input type="checkbox" name="interested" checked> Mountains<br>
+            <input type="checkbox" name="interested"> Other (Please specify) <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>&nbsp;About you (optional)&nbsp;</legend>
+            <p>I usually prefer to trips this time of year (Select all that apply):</p>
+            <select name="pref" id="" multiple>
+                <option value="">Winter</option>
+                <option value="">Spring</option>
+                <option value="">Summer</option>
+                <option value="">Fall</option>
+            </select><br>
+            <div class='table'>
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" name="firstname" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="lastname" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td><input type="text" name="phone" size="12"placeholder="123-456-7890"></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address</td>
+                        <td><input type="text" name="emailaddress" size="40" placeholder="name@example.com"></td>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+        <input class='button' type="submit" value="SEND REVIEW">
+        <input class='button' type="reset" value="CANCEL"/>
+        <input type="hidden" name="formname" value="Your Name Trip Review">
+    </form>
+
+    <footer>
+            <img src="images/outdooradventurehorizontal.png" alt="">
+        </footer>
+</body>
+</html>
