@@ -1,0 +1,195 @@
+/*<!--  Author: Mahum Tariq, 000848909 ->*/
+
+		*{
+		margin: 0;
+		padding: 0;
+		} 
+
+		header {
+			display: grid; 
+			grid-template-columns: 1fr 1fr 1fr;
+			align-items: center;
+		}
+
+		footer {
+			padding: 15px 0 15px;
+			display: grid;
+			grid-template-columns: 245px 1fr 1fr 1fr 1fr;
+			grid-row-gap: 10px 
+			grid-column-gap: 15px;
+			background-color: lightblue;
+			border-top: 1px solid #0172BA;
+			border-bottom: 1px solid #0172BA;
+		}
+		
+		menu{ /*nav */
+		    display: flex; 
+			flex-wrap: nowrap;
+			justify-content: space-evenly;
+		}
+		
+		nav{  /*line-height:1.5em;*/
+		   border-bottom: 1px solid #0172BA;
+		   border-top: 1px solid #0172BA;
+		   top: 0;
+		   position: sticky;
+		}
+		
+		nav ul{ 
+		    background-color: lightblue;
+			padding: 15px;
+		}
+		
+		nav ul li{
+			text-decoration: none;
+			list-style-type: none;
+			margin: 0.2em;
+		}
+		
+		nav a{
+			text-decoration: none;
+			font-size: 1.25em;
+			color: #0172BA;
+			background-color: white;
+			padding: 0.4em 0.7em;
+			border: 1px solid #0172BA;
+			border-radius: 25px;
+		}
+		
+		nav a:hover{
+			background-color: #003557;
+		}
+		
+		footer div div p:first-of-type{
+			font-weight:bold;
+		}
+		
+		footer li:hover{
+			background-color: #0172BA;
+		}
+		
+		a{
+			font-family: Arial;
+			line-height: 2em;
+		}
+		
+		maintrailstitlerow{
+			grid-column: 1 / span 2;
+			text-align: center;
+		}
+		
+		footer1 li{
+			list-style-type: none;
+		}
+		
+		maintrailsleft{
+			grid-column: 1x;
+			border-right: 1px solid black;
+			align-content: center;
+		}
+		
+		maintrailsright{
+			grid-column: 2;
+			padding-left: 10px;
+		}
+		
+		maintrailscontainer{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			border: 1px solid black;
+			background-color: lightblue;
+			padding: 3px 0px 24px 0px
+			margin: 30px 15px 7px 10px;
+			line-height: 20px;
+			align-content: center;
+		}
+		
+		gridmaincontainer{
+			margin: 10px 10% 0px;
+			display: grid;
+			grid-template-columns: minmax(200px, 230px) 1fr 200px;
+			grid-gap: 25px;
+		}
+		
+		gridheaderbuttons a{
+			text-decoration: none;
+			font-size: 1.25em;
+			color: white;
+			background-color: #0172BA;
+			padding: 0.4em 0.7em;
+			border: 1px solid #003557;
+			border-radius: 25px;
+		}
+		
+		gridheaderbuttons a:hover{
+			background-color: #089247;
+		}
+		
+		gridheadericons{
+			grid-column: 1;
+		}
+		
+		gridheaderlogo{
+			grid-column: 2;
+			text-align: center;
+		}
+		
+		gridheaderbuttons{
+			grid-column: 3;
+			text-align: right;
+		}
+		
+		gridgallery{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: center; 
+		}
+		
+		ads{
+			grid-column: 3;
+		}
+		
+		Column1{
+			grid-column: 1;
+		}
+		
+		credits{
+			grid-row: 2;
+			grid-column: 1 / span 3;
+		}
+		
+		logo{
+			grid-column: 1;
+		}
+		
+		aboutus{
+			grid-column: 2;
+		}
+		
+		reviews{
+			grid-column: 3;
+		}
+		
+		seminars{
+			grid-column: 4;
+		}
+		
+		shop{
+			grid-column: 5;
+		}
+		
+		photos{
+			grid-column: 2;
+			grid-row: 2;
+		}
+		
+		travel{
+			grid-column: 3;
+			grid-row: 2;
+		}
+		
+		events{
+			grid-column: 4;
+			grid-row: 2;
+		}
