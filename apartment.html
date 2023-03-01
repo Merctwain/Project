@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Mahum Tariq, 000848909 -->
+	<meta charset="UTF-8">
+	<title>Sandy and Leslie's apartment</title>
+	<link rel="stylesheet" href="apartment_layout.css">
+	<link rel="stylesheet" href="mobile.css">
+	<link rel="stylesheet" href="printer.css" media="print">
+
+</head>
+
+<body>
+	<h1>Sandy and Leslie's Apartment</h1>
+	<header>
+		<figure>
+			<figcaption>Click a room for a detailed view</figcaption>
+			<img src="images/apartmentfloorplan.jpg" usemap="#image-map">
+
+			<map name="image-map">
+				<area alt="Dining Room" title="dining Room" href="diningroom.html" coords="413,139,48" shape="circle">
+				<area alt="Kitchen" title="kitchen" href="kitchen.html" coords="247,270,386,393" shape="rect">
+				<area alt="Bedroom 1" title="bedroom 1" href="bedroom.html" coords="61,14,194,159" shape="rect">
+				<area alt="Bedroom 2" title="bedroom 2" href="bedroom.html" coords="205,15,347,155" shape="rect">
+				<area alt="Living Room" title="living Room" href="livingroom.html"
+					coords="384,190,471,170,526,181,540,390,389,393" shape="poly">
+				<area shape="default" href="apartment.html" alt="floorplan">
+			</map>
+		</figure>
+	</header>
+
+	<nav>
+		<a href="apartment.html">Apartment</a>
+		<a href="bedroom.html">Bedroom 1</a>
+		<a href="bedroom.html">Bedroom 2</a>
+		<a href="diningroom.html">Dining Room</a>
+		<a href="kitchen.html">Kitchen</a>
+		<a href="livingroom.html">Living Room</a>
+	</nav>
+
+	<main>
+
+		<div class="grid survey">
+			<h3>Survey</h3>
+			<p>How did you find out about this apartment? Check ant that apply:</p>
+			<form name="survey form" method="POST" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+				<input type="checkbox" name="survey" value="web_search" id="web">
+				<label for="web">Web Search</label>
+				<input type="checkbox" name="survey" value="friend" id="friend">
+				<label for="friend">Friend</label>
+				<input type="checkbox" name="survey" value="newspaper" id="news">
+				<label for="news">NewsPaper</label>
+				<br><br>
+				<input type="submit" name="submitbutton" value="Submit">
+				<input type="reset" name="resetbutton" value="Reset Form">
+			</form>
+		</div>
+
+		<div class="grid services">
+			<h3>Apartment services:</h3>
+			<table>
+				<colgroup>
+					<col class="leftcol">
+					<col class="rightcol">
+				</colgroup>
+				<tr>
+					<th>Services</th>
+					<th>Day/Hours</th>
+				</tr>
+				<tr>
+					<td>Gym</td>
+					<td rowspan="2"><br>Monday-Friday 6am - 10pm<br>
+						Saturday 8am - 8pm<br>
+						Sunday 8am - 5pm<br></td>
+				<tr>
+					<td>Pool</td>
+				</tr>
+				<tr>
+					<td>Laundry</td>
+					<td>24/7</td>
+				</tr>
+				<tr class="tablefoot">
+					<td colspan="2">Please do not allow people you do not know to use these facilities.</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="grid location">
+			<h3>Location</h3>
+			<figure class="locationimg">
+				<img src="images/location.png" alt="Location map">
+			</figure>
+		</div>
+
+		<div class="grid welcome">
+			<h3>Welcome Message</h3>
+			<audio controls>
+				<source src="apartment.mp3" type="audio/mp3">
+			</audio>
+			<p>Transcript: Hello, Welcome to our apartment, You'll really enjoy living here. The rooms
+				are spacious and the aprtment building amenities are fantastic. We look forward to
+				hearing from you!</p>
+
+		</div>
+	</main>
+
+	<div class="gallery">
+		<h3>Gallery</h3>
+
+		<div class="galleryflex">
+			<div class="picbox">
+				<h4>Balcony</h4>
+				<figure><img src="images/thumbnails/balcony_sm.jpg" alt="pic1"></figure>
+			</div>
+			<div class="picbox">
+				<h4>Bathroom</h4>
+				<figure><img src="images/thumbnails/bathroom_sm.jpg" alt="pic2"></figure>
+			</div>
+			<div class="picbox">
+				<h4>Bedroom</h4>
+				<figure><img src="images/thumbnails/bedroom_sm.jpg" alt="pic3"></figure>
+			</div>
+			<div class="picbox">
+				<h4>Dining Room</h4>
+				<figure><img src="images/thumbnails/diningroom_sm.jpg" alt="pic4"></figure>
+			</div>
+			<div class="picbox">
+				<h4>Kitchen</h4>
+				<figure><img src="images/thumbnails/kitchen_sm.jpg" alt="pic5"></figure>
+			</div>
+			<div class="picbox">
+				<h4>Living Room</h4>
+				<figure><img src="images/thumbnails/livingroom_sm.jpg" alt="pic6"></figure>
+			</div>
+		</div>
+
+		<footer>
+			<p>For more information contact:
+				<a href="mailto:sandyandleslie@example.com">
+					sandyandleslie@example.com</a> or <a href="#">(905) 555-1234</a>
+			</p>
+			<p>&copy; Sandy and Leslie 2020</p>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
