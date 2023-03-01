@@ -1,0 +1,9 @@
+/*<!--  Author: Mahum Tariq, 000848909 ->*/
+*{
+    color: black;
+    background-color: transparent;
+}
+
+footer, nav{
+    display: none;
+}
