@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  Author: Mahum Tariq, 000848909 -->
+    <meta charset="UTF-8">
+    <title>Outdoor Adventure Seminars</title>
+    <link rel="stylesheet" href="adventurestyles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <style>
+        .legend-sample{
+            display: inline-block;
+            width: 10px;
+            height: 15px;
+        }
+        .purple{
+            background-color: #9262AF;
+        }
+        .blue{
+            background-color: #00A5D6;
+        }
+        .green{
+            background-color: #99EE8A;
+        }
+        .yellow{
+            background-color: #F9F871;
+        }
+        th{
+            background-color: #002759;
+            color: white;
+            text-align: center;
+        }
+        .grey{
+            background-image: url("images/dust.jpg");
+            background-repeat: repeat;
+            text-align: center;
+        }
+        .cyan{
+            background-color: #DDEEFF;
+            text-align: center;
+        }
+        table,td,th{
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 7px;
+            background-clip: padding-box;
+        }
+        table{
+            width: 100%;
+        }
+        .caption{
+            width: 100%;
+            text-align: right;
+        }
+        .content{
+            width: 90%;
+            margin: auto;
+        }
+        table.legend, table.legend td{
+            border-collapse: collapse;
+            border: none;
+        }
+        table.legend{
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Outdoor Adventure Seminars<br>2020/2021</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Photos</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="seminars.html">Seminars</a></li>
+            <li><a href="">Event</a></li>
+        </ul>
+    </nav>
+
+    <div class='content'>
+        <span>Legend :</span><br>
+        <table class='legend'>
+            <td>
+            <span class='legend-sample purple'></span> Beginner Cycling
+            </td>
+            <td>
+            <span class='legend-sample blue'></span> Long Distance Cycling
+            </td>
+            <td>
+            <span class='legend-sample green'></span> Hiking
+            </td>
+            <td>
+            <span class='legend-sample yellow'></span> Camping
+            </td>
+        </table>
+        <table>
+                <tr>
+                    <th>Day</th>
+                    <th>7am - 9am</th>
+                    <th>9am - 11am</th>
+                    <th>11am - 12pm</th>
+                    <th>12pm - 2pm</th>
+                    <th>2pm - 4pm</th>
+                    <th>6pm - 8pm</th>
+                    <th>8pm - 10pm</th>
+                </tr>
+                <tr>
+                    <td class='cyan'>Monday</td>
+                    <td colspan=7 class='grey'>Reserved for groups</td>
+                </tr>
+                <tr>
+                    <td class='cyan'>Tuesday</td>
+                    <td class='green'>Hiking</td>
+                    <td class='purple'>Beginner Cycling</td>
+                    <td class='yellow' colspan=5>Camping</td>
+                </tr>
+                <tr>
+                    <td class='cyan'>Wednesday</td>
+                    <td class='blue' rowspan=2>Long Distance Cycling Part 1</td>
+                    <td></td>
+                    <td class='purple'>Beginner Cycling</td>
+                    <td class='yellow' rowspan=2>Camping in Asia</td>
+                    <td class="green" rowspan=3 colspan=2>Hiking</td>
+                    <td class='blue' rowspan=2>Long Distance Cycling Part 2</td>
+                </tr>
+                <tr>
+                    <td class='cyan'>Thursday</td>
+                    <td class='yellow'>Camping</td>
+                </tr>
+                <tr>
+                    <td class='cyan'>Friday</td>
+                    <td class='yellow' rowspan=4>Camping in Europe</td>
+                    <td class='purple' colspan=2>Beginner Cycling</td>
+                    
+                </tr>
+                <tr>
+                    <td class='cyan'>Saturday</td>
+                    <td class='green' colspan=3 rowspan=2>Hiking</td>
+                    <td class='purple'>Beginner Cycling</td>
+                    <td class="blue" colspan=2 rowspan=2>Long Distance Cycling Part 1 and 2</td>
+                </tr>
+                <tr>
+                    <td class='cyan'>Sunday</td>
+                </tr>
+                <tr>
+                    <td class='cyan'>Holidays</td>
+                    <td class='blue' colspan=2>Long Distance Cycling</td>
+                    <td class="grey" colspan=4>No Seminars</td>
+                </tr>
+            </table>
+            <div class='caption'>
+                <span>Schedule is subject to change</span>
+            </div>
+        </div>
+        <footer>
+            <img src="images/outdooradventurehorizontal.png" alt="">
+        </footer>
+</body>
+</html>
