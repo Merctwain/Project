@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Mahum Tariq, 000848909 -->
+		<title>Nutrition Conference</title>
+		<style>
+		    
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			header {
+				font-family: "MS Comic Sans, Cursive";
+				font-size: 2em;
+				text-align: center;
+			}
+		    .flex-container {
+				display: flex;
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+			.form {
+				border: 1px dotted black;
+				padding: 20px;
+			}
+			.p-2 {
+				padding: 20px;
+
+			}
+			.events {
+				width: 100%;
+
+			}
+			.events , .events th, .events td {
+				border-collapse: collapse;
+				border: 1px solid black;
+			}
+
+			.events th, .events td {
+				padding: 15px;
+			}
+
+			.events th {
+				background-color: gray;
+				color: white;
+				font-weight: bold;
+				border: none;
+			}
+
+			button{
+				height: 40px;
+				width: 200px;
+				border: 1px dotted black;
+			}
+
+			.location {
+				background-color: #D3D3D3;
+				width: 15%;
+			}
+		
+		    footer {
+				font-family: "MS Comic sans, cursive";
+				font-size: 75%;
+				border-top: 2px solid #D3D3D3;
+				margin: 15px;
+		     }
+	    </style>
+	</head>
+	<body>
+	    <div class="flex-container">
+        <div class="p-2">
+            <h2 class="text-center">Nutrition Conference: Info Sessions Timetable</h2>
+            <table class="events">
+                <tr>
+                    <th>Conference Room</th>
+                    <th>9.00am</th>
+                    <th>11.00am</th>
+                    <th>1.00pm</th>
+                    <th>3.00pm</th>
+                    <th>7.00pm</th>
+                </tr>
+				
+				<tr>
+				   <td class="conference room">Lyra</td>
+                    <td rowspan="2" colspan="2">Lion Diets</td>
+                    <td colspan="2">Keto Diets</td>
+                    <td rowspan="5" style="background-color: #D3D3D3;">Vegan Diets</td>
+                </tr>
+                <tr>
+				   <td class="location">Perseus</td>
+                    <td rowspan="2">Fruits</td>
+                </tr>
+
+                <tr>
+                    <td class="location">Virgo</td>
+                    <td rowspan="2">Legumes</td>
+                    <td>Dairy</td>
+                    <td>Peanuts</td>
+                </tr>
+
+                <tr>
+                    <td class="location">Taurus</td>
+                    <td colspan="3">Vegetarian Diets</td>
+                </tr>
+
+                <tr>
+                    <td class="location">Orion</td>
+                    <td colspan="3">Protein</td>
+                    <td>Dairy</td>
+                </tr>
+            </table>
+		</div>
+		<div class="form">
+            <form action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="post">
+			
+			   <h2>Survey</h2>
+                <fieldset>
+                    <legend>Activity (choose multiple)</legend>
+					<table>
+					    <fieldset>
+                          
+                            <input type="checkbox" name="music" value="Country"> Run <br>
+                            <input type="checkbox" name="music" value="Classic"> Cycle <br>
+                            <input type="checkbox" name="music" value="Rock"> Swim <br>
+                            <input type="checkbox" name="music" value="World Music"> Play a Sport <br>
+                        </fieldset>
+						
+						<div class="flex-container">
+                        <fieldset>
+                            <legend>How Often?</legend>
+                            <input type="radio" name="time" value="3+ times per week"> 3+ times per week <br>
+                            <input type="radio" checked name="time" value="1 or 2 times per week">1 or 2 times per week <br>
+                            <input type="radio" name="time" value="Once a month">Once a month <br>
+                        </fieldset>
+						
+						<div>
+						
+						<fieldset>	
+						<legend>Suggestions to motivate people to eat healthy?</legend>
+						<textarea name="questions" rows="5" cols="50">Please suggest some ideas</textarea>
+					</fieldset>
+						
+			        <fieldset>
+                    <legend>Diet Informatin: </legend>
+                    <table>
+                        <tr>
+                            <td><label>Specialized Diet?</label></td>
+                            <td><input type="text" name="diet" id=""></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Favourite Vegetable?</label></td>
+                            <td><input type="text" name="vegetable" id="" placeholder="Spinach"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Favourite fruit?</label></td>
+                            <td>
+                                <select name="fruit" id="">
+                                    <option value="Cricket">Apriot</option>
+                                    <option selected value="Strawberry">Strawberry</option>
+                                    <option value="Banana">Banana</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+				
+				<div class="text-center">
+                    <button type="submit">Send survey</button>
+                    <button>Clear survey</button>
+                </div>
+
+                <input type="text" hidden name="formname" value="First Last">
+            </form>
+        </div>
+		
+		</div>
+		
+		<footer>
+		<p>Survey Says 2020</p>
+	</footer>
+	</body>
+</html>
+
+							
+					
+				
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
