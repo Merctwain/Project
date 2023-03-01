@@ -1,0 +1,79 @@
+/* Author: Mahum Tariq, 000848909*/
+.nav-links{
+    float: right;
+}
+/* .cog *{
+    margin: 0;
+    padding: 0;
+} */
+.cog{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 1px #202020;
+}
+#cog-1{
+    animation: run-machine 1s linear infinite;
+}
+#cog-2{
+    margin-left: -10px;
+    animation: run-machine 1s linear infinite;
+    animation-direction: reverse;
+    /* animation-delay: 0.1s; */
+}
+.cog span{
+    width: 66px;
+    height: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-top: calc(50% - 5px);
+    position: absolute;
+}
+.cog span:nth-child(1){
+    transform: rotate(0deg);
+}
+.cog span:nth-child(2){
+    transform: rotate(120deg);
+}
+.cog span:nth-child(3){
+    transform: rotate(240deg);
+}
+header{
+    display: flex;
+}
+
+.nav-item:hover{
+    background-color: #3d85c6;
+    color: white;
+    transition-duration: .7s;
+    border-radius: 5px;
+}
+
+.nav-item:hover a{
+    color: white;
+}
+#slideshow{
+    width: 70%;
+    height: 600px;
+    margin: 10px auto;
+}
+.carousel-inner{
+    height: 600px;
+}
+@keyframes run-machine{
+    0%{
+        transform: rotate(0deg);
+        border-width: 1px;
+        margin-left: 0px;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-width: 6px;
+        margin-left: 40px;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-width: 1px;
+        margin-left: 0px;
+    }
+}
